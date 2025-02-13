@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="18" short-name="art-class" url="https://polygon.codeforces.com/p3VIME7/kimchijeon/art-class">
+    <names>
+        <name language="korean" value="미술 시간"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/korean/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/.html/korean/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>25</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="Generator 100000 100000 50000 1" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 2" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 3" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 4" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 5" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 6" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 7" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 8" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 9" method="generated"/>
+                <test cmd="Generator 100000 100000 50000 10" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 11" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 12" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 13" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 14" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 15" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 16" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 17" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 18" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 19" method="generated"/>
+                <test cmd="Generator 100000 100000 99999 20" method="generated"/>
+                <test cmd="Generator 100 100 90 21" method="generated"/>
+                <test cmd="Generator 1 1 0 22" method="generated"/>
+                <test method="manual"/>
+                <test method="manual"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Generator.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/Validator.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Validator.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/jk410_sol.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/lycoris1600_AC.py" type="python.pypy3"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/lycoris1600_segment_inverse.py" type="python.pypy3"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/lycoris1600_segment_slow.py" type="python.pypy3"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/main_solution_pypy.py" type="python.pypy3"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/sjmjys954646_solution.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/sjmjys954646_solution_bruteforce.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="implementation"/>
+    </tags>
+</problem>

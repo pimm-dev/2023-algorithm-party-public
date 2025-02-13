@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="27" short-name="popularity-vote" url="https://polygon.codeforces.com/p3jKj80/ShapeLayer/popularity-vote">
+    <names>
+        <name language="korean" value="인기투표"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/korean/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/.html/korean/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="100">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>7</test-count>
+            <input-path-pattern>100/%02d</input-path-pattern>
+            <answer-path-pattern>100/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="genmx 0" method="generated"/>
+                <test cmd="genmx 1" method="generated"/>
+                <test cmd="genmx 2" method="generated"/>
+                <test cmd="genmx 3" method="generated"/>
+                <test cmd="genmx 4" method="generated"/>
+                <test cmd="genmx 5" method="generated"/>
+                <test cmd="genmx 6" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="example">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>2</test-count>
+            <input-path-pattern>example/%02d</input-path-pattern>
+            <answer-path-pattern>example/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+            </tests>
+        </testset>
+        <testset name="sidecase">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>11</test-count>
+            <input-path-pattern>sidecase/%02d</input-path-pattern>
+            <answer-path-pattern>sidecase/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test cmd="generator 100 3" method="generated"/>
+                <test cmd="generator 100 4" method="generated"/>
+                <test cmd="generator 100 5" method="generated"/>
+                <test cmd="generator 100 6" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>140</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="generator 2 2" method="generated"/>
+                <test cmd="generator 3 2" method="generated"/>
+                <test cmd="generator 4 2" method="generated"/>
+                <test cmd="generator 5 2" method="generated"/>
+                <test cmd="generator 6 2" method="generated"/>
+                <test cmd="generator 7 2" method="generated"/>
+                <test cmd="generator 30 2" method="generated"/>
+                <test cmd="generator 31 2" method="generated"/>
+                <test cmd="generator 32 2" method="generated"/>
+                <test cmd="generator 33 2" method="generated"/>
+                <test cmd="generator 34 2" method="generated"/>
+                <test cmd="generator 35 2" method="generated"/>
+                <test cmd="generator 36 2" method="generated"/>
+                <test cmd="generator 37 2" method="generated"/>
+                <test cmd="generator 38 2" method="generated"/>
+                <test cmd="generator 39 2" method="generated"/>
+                <test cmd="generator 40 2" method="generated"/>
+                <test cmd="generator 89 2" method="generated"/>
+                <test cmd="generator 90 2" method="generated"/>
+                <test cmd="generator 91 2" method="generated"/>
+                <test cmd="generator 92 2" method="generated"/>
+                <test cmd="generator 93 2" method="generated"/>
+                <test cmd="generator 94 2" method="generated"/>
+                <test cmd="generator 95 2" method="generated"/>
+                <test cmd="generator 96 2" method="generated"/>
+                <test cmd="generator 97 2" method="generated"/>
+                <test cmd="generator 98 2" method="generated"/>
+                <test cmd="generator 99 2" method="generated"/>
+                <test cmd="generator 2 3" method="generated"/>
+                <test cmd="generator 3 3" method="generated"/>
+                <test cmd="generator 4 3" method="generated"/>
+                <test cmd="generator 5 3" method="generated"/>
+                <test cmd="generator 6 3" method="generated"/>
+                <test cmd="generator 7 3" method="generated"/>
+                <test cmd="generator 30 3" method="generated"/>
+                <test cmd="generator 31 3" method="generated"/>
+                <test cmd="generator 32 3" method="generated"/>
+                <test cmd="generator 33 3" method="generated"/>
+                <test cmd="generator 34 3" method="generated"/>
+                <test cmd="generator 35 3" method="generated"/>
+                <test cmd="generator 36 3" method="generated"/>
+                <test cmd="generator 37 3" method="generated"/>
+                <test cmd="generator 38 3" method="generated"/>
+                <test cmd="generator 39 3" method="generated"/>
+                <test cmd="generator 40 3" method="generated"/>
+                <test cmd="generator 89 3" method="generated"/>
+                <test cmd="generator 90 3" method="generated"/>
+                <test cmd="generator 91 3" method="generated"/>
+                <test cmd="generator 92 3" method="generated"/>
+                <test cmd="generator 93 3" method="generated"/>
+                <test cmd="generator 94 3" method="generated"/>
+                <test cmd="generator 95 3" method="generated"/>
+                <test cmd="generator 96 3" method="generated"/>
+                <test cmd="generator 97 3" method="generated"/>
+                <test cmd="generator 98 3" method="generated"/>
+                <test cmd="generator 99 3" method="generated"/>
+                <test cmd="generator 2 4" method="generated"/>
+                <test cmd="generator 3 4" method="generated"/>
+                <test cmd="generator 4 4" method="generated"/>
+                <test cmd="generator 5 4" method="generated"/>
+                <test cmd="generator 6 4" method="generated"/>
+                <test cmd="generator 7 4" method="generated"/>
+                <test cmd="generator 30 4" method="generated"/>
+                <test cmd="generator 31 4" method="generated"/>
+                <test cmd="generator 32 4" method="generated"/>
+                <test cmd="generator 33 4" method="generated"/>
+                <test cmd="generator 34 4" method="generated"/>
+                <test cmd="generator 35 4" method="generated"/>
+                <test cmd="generator 36 4" method="generated"/>
+                <test cmd="generator 37 4" method="generated"/>
+                <test cmd="generator 38 4" method="generated"/>
+                <test cmd="generator 39 4" method="generated"/>
+                <test cmd="generator 40 4" method="generated"/>
+                <test cmd="generator 89 4" method="generated"/>
+                <test cmd="generator 90 4" method="generated"/>
+                <test cmd="generator 91 4" method="generated"/>
+                <test cmd="generator 92 4" method="generated"/>
+                <test cmd="generator 93 4" method="generated"/>
+                <test cmd="generator 94 4" method="generated"/>
+                <test cmd="generator 95 4" method="generated"/>
+                <test cmd="generator 96 4" method="generated"/>
+                <test cmd="generator 97 4" method="generated"/>
+                <test cmd="generator 98 4" method="generated"/>
+                <test cmd="generator 99 4" method="generated"/>
+                <test cmd="generator 2 5" method="generated"/>
+                <test cmd="generator 3 5" method="generated"/>
+                <test cmd="generator 4 5" method="generated"/>
+                <test cmd="generator 5 5" method="generated"/>
+                <test cmd="generator 6 5" method="generated"/>
+                <test cmd="generator 7 5" method="generated"/>
+                <test cmd="generator 30 5" method="generated"/>
+                <test cmd="generator 31 5" method="generated"/>
+                <test cmd="generator 32 5" method="generated"/>
+                <test cmd="generator 33 5" method="generated"/>
+                <test cmd="generator 34 5" method="generated"/>
+                <test cmd="generator 35 5" method="generated"/>
+                <test cmd="generator 36 5" method="generated"/>
+                <test cmd="generator 37 5" method="generated"/>
+                <test cmd="generator 38 5" method="generated"/>
+                <test cmd="generator 39 5" method="generated"/>
+                <test cmd="generator 40 5" method="generated"/>
+                <test cmd="generator 89 5" method="generated"/>
+                <test cmd="generator 90 5" method="generated"/>
+                <test cmd="generator 91 5" method="generated"/>
+                <test cmd="generator 92 5" method="generated"/>
+                <test cmd="generator 93 5" method="generated"/>
+                <test cmd="generator 94 5" method="generated"/>
+                <test cmd="generator 95 5" method="generated"/>
+                <test cmd="generator 96 5" method="generated"/>
+                <test cmd="generator 97 5" method="generated"/>
+                <test cmd="generator 98 5" method="generated"/>
+                <test cmd="generator 99 5" method="generated"/>
+                <test cmd="generator 2 6" method="generated"/>
+                <test cmd="generator 3 6" method="generated"/>
+                <test cmd="generator 4 6" method="generated"/>
+                <test cmd="generator 5 6" method="generated"/>
+                <test cmd="generator 6 6" method="generated"/>
+                <test cmd="generator 7 6" method="generated"/>
+                <test cmd="generator 30 6" method="generated"/>
+                <test cmd="generator 31 6" method="generated"/>
+                <test cmd="generator 32 6" method="generated"/>
+                <test cmd="generator 33 6" method="generated"/>
+                <test cmd="generator 34 6" method="generated"/>
+                <test cmd="generator 35 6" method="generated"/>
+                <test cmd="generator 36 6" method="generated"/>
+                <test cmd="generator 37 6" method="generated"/>
+                <test cmd="generator 38 6" method="generated"/>
+                <test cmd="generator 39 6" method="generated"/>
+                <test cmd="generator 40 6" method="generated"/>
+                <test cmd="generator 89 6" method="generated"/>
+                <test cmd="generator 90 6" method="generated"/>
+                <test cmd="generator 91 6" method="generated"/>
+                <test cmd="generator 92 6" method="generated"/>
+                <test cmd="generator 93 6" method="generated"/>
+                <test cmd="generator 94 6" method="generated"/>
+                <test cmd="generator 95 6" method="generated"/>
+                <test cmd="generator 96 6" method="generated"/>
+                <test cmd="generator 97 6" method="generated"/>
+                <test cmd="generator 98 6" method="generated"/>
+                <test cmd="generator 99 6" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="manual">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>3</test-count>
+            <input-path-pattern>manual/%02d</input-path-pattern>
+            <answer-path-pattern>manual/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test description="max ans" method="manual"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genmx.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::wcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>7</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/belline0124_ac_cpp.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/kiwiyou_ac_rs.rs" type="rust"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/lycoris1600_ac_py.py" type="python.3"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="gcd"/>
+        <tag value="math"/>
+        <tag value="simple math"/>
+    </tags>
+</problem>

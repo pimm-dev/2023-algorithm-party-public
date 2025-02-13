@@ -1,0 +1,29 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>알파빌과 베타빌</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">알파빌과 베타빌</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>민규와 친구들은 바로 옆에 붙어있는 두 빌라, 알파빌과 베타빌에 살고 있다. 이 두 빌라 중 알파빌은 싼값에 너무 인기가 많아서 입주하려는 사람들이 줄을 선다. 민규의 친구들 역시 대기 번호를 받아 알파빌의 대기 명단에 적혀있다. 알파빌 입주에 실패한 친구들은 조금 더 비싼 베타빌에 어쩔 수 없이 들어가게 될 것이다. 이를 안타까워 한 민규는 더 많은 친구를 알파빌에 입주시키기 위해 집주인 몰래 대기 명단을 바꾸려고 한다. 대기 명단에는 입주하려는 사람들의 대기 번호가 입주하는 순서대로 왼쪽에서 오른쪽으로 적혀 있으며, 대기 번호는 $$$1$$$번부터 $$$N$$$번까지의 서로 다른 정수이다. 민규는 한 번 명단을 바꿀 때 번호 $$$2$$$개를 선택해서 서로 위치를 교환할 수 있다. 대기 명단을 너무 많이 바꾸면 집주인이 눈치를 챌 수 있기 때문에 민규의 모든 친구가 친구가 아닌 사람들보다 우선적으로 입주하도록 명단을 바꿀 때, 최소 시도 횟수를 출력하자. </P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>첫 번째 줄에 대기 명단에 적힌 수의 개수 $$$N$$$과 민규 친구의 수 $$$M$$$이 주어진다. ($$$1 \le M \le N \le 1\,000$$$) </P><P>두 번째 줄에 대기 명단에 적힌 $$$N$$$개의 정수가 주어진다.</P><P>세 번째 줄에 민규 친구의 대기 번호를 나타내는 $$$M$$$개의 정수가 주어진다.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>모든 친구들이 우선적으로 입주할 수 있도록 명단을 바꾸는 최소횟수를 출력한다.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Examples</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+5 2
+1 2 3 4 5
+3 4
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+2
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+5 2
+3 1 2 4 5
+3 4
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+1
+</PRE></DIV></DIV></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

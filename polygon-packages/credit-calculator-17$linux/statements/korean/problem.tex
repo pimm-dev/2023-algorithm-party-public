@@ -1,0 +1,37 @@
+\begin{problem}{학점계산프로그램}{standard input}{standard output}{1 second}{256 megabytes}
+
+종현이는 학교 포털 사이트에서 본인의 학점을 계산하는 프로그램을 영도와 협업하여 만들고 있다. 종현이는 영도가 사이트에서 파싱해온 등급 데이터를 사용해서 평균학점을 출력하고자 한다. 
+
+등급별 학점은 다음의 표를 따른다.
+
+\begin{table}
+\begin{tabular}{|l|l|}
+\hline
+A+ & 4.5 \\ \hline
+A  & 4.0 \\ \hline
+B+ & 3.5 \\ \hline
+B  & 3.0 \\ \hline
+C+ & 2.5 \\ \hline
+C  & 2.0 \\ \hline
+D+ & 1.5 \\ \hline
+D  & 1.0 \\ \hline
+F  & 0   \\ \hline
+\end{tabular}
+\end{table}
+
+\InputFile
+첫째 줄에 과목별 등급이 나열된 문자열 $S$가 주어진다. 문자열은 표에 있는 문자들로만 이루어져 있으며, 최대 $1000$ 글자로 이루어져 있다.
+
+\OutputFile
+$S$에 나열된 등급으로 구한 학점의 산술평균을 첫째 줄에 출력한다. 정답과 출력값의 절대/상대 오차는 $10^{-4}$까지 허용한다.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\exmpfile{example.03}{example.03.a}%
+\end{example}
+
+\end{problem}
+

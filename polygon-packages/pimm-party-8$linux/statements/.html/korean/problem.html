@@ -1,0 +1,25 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>PIMM 파티</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">PIMM 파티</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>2 seconds</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>1024 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>PIMM 회장인 민규는 여름방학을 맞이해 파티를 열기로 했다! 회장 역할에 진심인 민규는 <SPAN class="tex-font-style-bf">모두가 행복한 파티</SPAN>를 만들기로 한다.$$$$$$$$$$$$</P><P>수석 인간관계 연구원인 종현이의 말에 따르면, PIMM 회원들은 근성이와 같은 <SPAN class="tex-font-style-bf">인싸(I)</SPAN>와, 윤수와 같은 <SPAN class="tex-font-style-bf">아싸(A)</SPAN>로 분류할 수 있다. <SPAN class="tex-font-style-bf">인싸</SPAN>들은 다른 사람과 말하는 것을 좋아하며, <SPAN class="tex-font-style-bf">자신 주변 상하좌우 4칸 안에 최소 1명 이상의 사람이 있으면 행복해한다.</SPAN> <SPAN class="tex-font-style-bf">아싸</SPAN>들은 다른 사람의 쓸데없는 말을 계속 듣는 것을 싫어하며, <SPAN class="tex-font-style-bf">자신 주변 상하좌우 4칸 안에 인싸가 없으면 행복해한다.</SPAN></P><P>민규는 <SPAN class="tex-font-style-bf">행복한 파티</SPAN>를 위해, $$$N$$$&times;$$$M$$$의 직사각형 형태로 이루어진 파티룸을 빌렸다. 민규는 정환이에게서 인싸 $$$X$$$명과, 아싸 $$$Y$$$명이 파티에 참여한다고 전달받았다.</P><P>영도는 민규를 대신하여, 파티룸에 인원들의 자리를 배정하는 역할을 맡게 되었다. 영도를 도와서 <SPAN class="tex-font-style-bf">아싸들이 먼저 배치된 파티룸</SPAN>의 정보가 주어졌을때, <SPAN class="tex-font-style-bf">모두가 행복한 파티</SPAN>를 만드는 경우의 수를 구해보자.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>첫 줄에는 $$$N, M, X, Y$$$가 한 줄에 주어진다. $$$(1 \le N,M \le 7, 1 \le X+Y \le N \cdot M)$$$</P><P>다음 N개의 줄에는 <SPAN class="tex-font-style-bf">아싸</SPAN>가 배치된 파티룸의 정보가 주어진다. '*'는 빈 칸이고, 'A'는 <SPAN class="tex-font-style-bf">아싸</SPAN>가 있는 위치이다. <SPAN class="tex-font-style-bf">아싸</SPAN>가 파티룸에 없을 수도 있다.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P><SPAN class="tex-font-style-bf">인싸</SPAN>들을 파티룸의 남은 자리에 배치했을때, <SPAN class="tex-font-style-bf">모두가 행복한 파티</SPAN>를 만들 수 있는 경우의 수를 1,000,000,007로 나눈 나머지를 한 줄에 출력한다. 만약 인원을 어떻게 배치하더라도 모두가 행복할 수 없는 경우, "UNHAPPY"를 출력한다.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Examples</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+2 3 2 1
+***
+**A
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+2</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+1 4 2 1
+*A**</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+UNHAPPY</PRE></DIV></DIV></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

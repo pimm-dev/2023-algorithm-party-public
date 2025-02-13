@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="17" short-name="namunamu" url="https://polygon.codeforces.com/p1YLe6B/rootachieve/namunamu">
+    <names>
+        <name language="korean" value="나무나무나 심어야지"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/korean/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/.html/korean/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>57</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test description="예제 1" method="manual" sample="true"/>
+                <test description="예제2" method="manual" sample="true"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test cmd="main_generator 2 100000" method="generated"/>
+                <test cmd="main_generator 9 100000" method="generated"/>
+                <test cmd="main_generator 28 100000" method="generated"/>
+                <test cmd="main_generator 65 100000" method="generated"/>
+                <test cmd="main_generator 126 100000" method="generated"/>
+                <test cmd="main_generator 217 100000" method="generated"/>
+                <test cmd="main_generator 344 100000" method="generated"/>
+                <test cmd="main_generator 513 100000" method="generated"/>
+                <test cmd="main_generator 730 100000" method="generated"/>
+                <test cmd="main_generator 1001 100000" method="generated"/>
+                <test cmd="main_generator 1332 100000" method="generated"/>
+                <test cmd="main_generator 1729 100000" method="generated"/>
+                <test cmd="main_generator 2198 100000" method="generated"/>
+                <test cmd="main_generator 2745 100000" method="generated"/>
+                <test cmd="main_generator 3376 100000" method="generated"/>
+                <test cmd="main_generator 4097 100000" method="generated"/>
+                <test cmd="main_generator 4914 100000" method="generated"/>
+                <test cmd="main_generator 5833 100000" method="generated"/>
+                <test cmd="main_generator 6860 100000" method="generated"/>
+                <test cmd="main_generator 8001 100000" method="generated"/>
+                <test cmd="main_generator 9262 100000" method="generated"/>
+                <test cmd="main_generator 10649 100000" method="generated"/>
+                <test cmd="main_generator 12168 100000" method="generated"/>
+                <test cmd="main_generator 13825 100000" method="generated"/>
+                <test cmd="main_generator 15626 100000" method="generated"/>
+                <test cmd="main_generator 17577 100000" method="generated"/>
+                <test cmd="main_generator 19684 100000" method="generated"/>
+                <test cmd="main_generator 21953 100000" method="generated"/>
+                <test cmd="main_generator 24390 100000" method="generated"/>
+                <test cmd="main_generator 27001 100000" method="generated"/>
+                <test cmd="main_generator 29792 100000" method="generated"/>
+                <test cmd="main_generator 32769 100000" method="generated"/>
+                <test cmd="main_generator 35938 100000" method="generated"/>
+                <test cmd="main_generator 39305 100000" method="generated"/>
+                <test cmd="main_generator 42876 100000" method="generated"/>
+                <test cmd="main_generator 46657 100000" method="generated"/>
+                <test cmd="main_generator 50654 100000" method="generated"/>
+                <test cmd="main_generator 54873 100000" method="generated"/>
+                <test cmd="main_generator 59320 100000" method="generated"/>
+                <test cmd="main_generator 64001 100000" method="generated"/>
+                <test cmd="main_generator 68922 100000" method="generated"/>
+                <test cmd="main_generator 74089 100000" method="generated"/>
+                <test cmd="main_generator 79508 100000" method="generated"/>
+                <test cmd="main_generator 85185 100000" method="generated"/>
+                <test cmd="main_generator 91126 100000" method="generated"/>
+                <test cmd="main_generator 97337 100000" method="generated"/>
+                <test cmd="main_generator 100000 100000" method="generated"/>
+                <test cmd="flat_generator 100000 500" method="generated"/>
+                <test cmd="flat_generator 50000 500" method="generated"/>
+                <test cmd="flat_generator 1 500" method="generated"/>
+                <test cmd="depth_generator 100000 500" method="generated"/>
+                <test cmd="depth_generator 50000 500" method="generated"/>
+                <test cmd="depth_generator 1 500" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/depth_generator.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/flat_generator.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/main_generator.cpp" type="cpp.g++"/>
+            </executable>
+            <executable>
+                <source path="files/main_validator.cpp" type="cpp.g++"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/main_validator.cpp" type="cpp.g++"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/jk410_sol.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/lycoris1600_AC.py" type="python.pypy3"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/lycoris1600_WA.py" type="python.pypy3"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/main_solution.cpp" type="cpp.g++"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/rustiebeats_AC.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/tony9402_sol.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>
